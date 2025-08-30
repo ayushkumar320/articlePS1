@@ -35,6 +35,7 @@ const articleSchema = new mongoose.Schema(
       type: String,
       enum: ["pending", "published", "rejected"],
       default: "pending",
+      
     },
     publishedDate: {
       type: Date,
