@@ -31,6 +31,11 @@ const articleSchema = new mongoose.Schema(
         lowercase: true,
       },
     ],
+    status: {
+      type: String,
+      enum: ["pending", "published", "rejected"],
+      default: "pending",
+    },
     publishedDate: {
       type: Date,
       default: Date.now,
